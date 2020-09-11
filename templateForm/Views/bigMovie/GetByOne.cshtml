@@ -1,0 +1,25 @@
+﻿@model templateForm.Models.movies
+@{
+    var tmp = ViewData["mov"] as templateForm.Models.movies;
+}
+
+@*<!doctype html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>getbyone</title>
+    <link href="~/content/bootstrap.css" rel="stylesheet" />
+</head>*@
+
+    <div class="bg-primary text-white">
+        id: @tmp.id
+        <br />
+        name: @tmp.name
+        <br />
+        year: @tmp.year
+        <br />
+        rate:  @tmp.rate
+    </div>
+@*</body>
+</html>*@
